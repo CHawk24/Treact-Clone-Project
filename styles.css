@@ -8,6 +8,10 @@
  font-family: "Inter", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 li {
  list-style-type: none;   
 }
@@ -47,6 +51,10 @@ a {
  cursor: pointer;    
 }
 
+.no-cursor {
+  cursor: not-allowed;
+}
+
 /* BURGER MENU  */
 
 .btn__menu {
@@ -81,7 +89,7 @@ a {
 
 @keyframes slide-in {
   0% {
-   transform: translateX(110%) ; 
+   transform: translateX(110%); 
   } 
 
   33% {
@@ -89,7 +97,7 @@ a {
   }
 
   100% {
-   transform: translateX(0 ); 
+   transform: translateX(0); 
   }
 }
 
@@ -115,16 +123,15 @@ a {
 
 .menu__link:hover {
  color: #6415ff;
- cursor: pointer;
  text-decoration: underline;
  text-underline-offset: 10px;
- text-decoration-color: #6415ff;
  text-decoration-thickness: 2px;
 }
 
 .menu__list--primary {
   margin-top: 12px;
 }
+
 
 .btn__menu--close {
  position: absolute; 
@@ -135,13 +142,11 @@ a {
 }
 
 .btn__menu--close:hover 
-.btn__menu:hover
-{
+.btn__menu:hover {
  color: #6415ff;
  cursor: pointer;
 
 }
-
 
 
 
@@ -182,8 +187,8 @@ a {
 
 
 .nav__links {
-    display: flex;
-    gap: 32px;
+  display: flex;
+  gap: 32px;
 }
 
 .nav__link {
@@ -194,8 +199,8 @@ a {
 
 .nav__link:hover {
   color: #6415ff; 
-}
 
+}
 
 .nav__link--margin {
   margin-left: 48px;  
@@ -209,9 +214,9 @@ a {
 }
 
 .nav__link--primary:hover {
-    background-color: #4108b4; 
-    color: white;
-    text-decoration: none;
+  background-color: #4108b4; 
+  color: white;
+  text-decoration: none;
 }
 
 .link__hover-effect:after {
@@ -223,8 +228,8 @@ a {
 }
 
 .link__hover-effect:hover:after {
- width: 100%;
- left: 0;
+  width: 100%;
+  left: 0;
 }
 
 /* Header */
@@ -311,6 +316,7 @@ input:focus {
 }
 
 /* Features */
+
 
 .features__description {
  display: flex;
@@ -743,6 +749,7 @@ input:focus {
  .testimonials__img--wrapper {
   box-sizing: border-box;
   width: 48%;
+  display: flex;
  }
 
  .testimonial__img {
@@ -955,8 +962,10 @@ padding: 8px 10px;
  }
 }
 
-/* DESKTOPS */
-@media (max-width: 1024px) {
+
+
+/* TABLETS */
+@media (max-width: 768px) {
   .btn__menu{
    display: block;
   }
@@ -964,10 +973,7 @@ padding: 8px 10px;
   .nav__link {
    display: none;
   }
-}
 
-/* TABLETS */
-@media (max-width: 768px) {
   .header__container {
    display: flex;
    flex-direction: column;
@@ -1058,7 +1064,7 @@ padding: 8px 10px;
   }
   
   .features__description {
-   margin-top: 250px;
+   margin-top: 96px;
   }
   
   .services {
